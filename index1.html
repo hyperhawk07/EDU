@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EDU PREDICT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>EDU PREDICT</h1>
+    <p class="subtitle">AI - BASED STUDENT SUCCESS PREDICTOR</p>
+
+    <form id="marksForm">
+      <label for="level">Select Education Level:</label>
+      <select id="level" required>
+        <option value="">--Select--</option>
+        <option value="10th">10th</option>
+        <option value="12th">12th</option>
+        <option value="UG">Under Graduation</option>
+      </select>
+
+      <div id="subjectMarks"></div>
+
+      <button type="submit">Predict</button>
+    </form>
+  </div>
+
+  <div id="resultPage" class="hidden">
+    <div class="result-container">
+      <h2>Your Performance:</h2>
+      <p id="gradeEmoji"></p>
+      <p id="gradeText"></p>
+      <p id="suggestions"></p>
+      <h4>For further info, contact:</h4>
+      <p>📞 9392664480, 7013496953</p>
+      <p class="credits">Created by VARSHITHBANDI, LOHITH</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
